@@ -1,7 +1,7 @@
 /*
  * @author: linhuibin
  * @date: 2020-11-16 11:18:58
- * @lastEditTime: 2020-11-16 11:21:47
+ * @lastEditTime: 2020-11-16 11:39:17
  * @lastEditors: linhuibin
  * @description:
  * @FilePath: \server-RCg:\projects\own-ui\vue.config.js
@@ -10,7 +10,7 @@ const path = require('path')
 const resolve = (filePath) => path.join(__dirname, './', filePath)
 module.exports = {
   outputDir: 'docs',
-  publicPath: '/own-ui-doc',
+  publicPath: '/own-ui',
   pages: {
     index: {
       entry: resolve('story/main.ts'),

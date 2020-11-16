@@ -1,20 +1,34 @@
 <!--
  * @author: linhuibin
  * @date: 2020-11-16 10:45:52
- * @lastEditTime: 2020-11-16 11:11:36
+ * @lastEditTime: 2020-11-16 14:47:07
  * @lastEditors: linhuibin
  * @description: APP vue
- * @FilePath: \server-RCg:\projects\own-ui\src\App.vue
+ * @FilePath: \server-RCg:\projects\own-ui\story\App.vue
 -->
 <template>
-  <div>sdsd</div>
+  <app-text ref="appText"></app-text>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent, onMounted, ref } from 'vue'
+import AppText from './components/app-test'
 
 export default defineComponent({
-  name: 'App'
+  name: 'App',
+  components: {
+    AppText
+  },
+  setup() {
+    const appText = ref(null)
+
+    onMounted(() => {
+      console.log('appText', appText.value)
+    })
+    return {
+      appText
+    }
+  }
 })
 </script>
 
