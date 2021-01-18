@@ -10,7 +10,7 @@ const path = require('path')
 const resolve = (filePath) => path.join(__dirname, './', filePath)
 module.exports = {
   outputDir: 'docs',
-  publicPath: '/own-ui',
+  publicPath: '/',
   pages: {
     index: {
       entry: resolve('story/main.ts'),
