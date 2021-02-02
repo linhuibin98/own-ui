@@ -9,52 +9,46 @@
 module.exports = {
   printWidth: 150,
   singleQuote: true,
-  trailingComma: "none",
+  trailingComma: 'none',
   semi: false,
   tabWidth: 2,
   useTabs: false,
   bracketSpacing: true,
   jsxBracketSameLine: false,
-  arrowParens: "always",
-  proseWrap: "preserve",
+  arrowParens: 'always',
+  proseWrap: 'preserve',
   overrides: [
     {
-      files: [
-        "*.json",
-        ".eslintrc",
-        ".tslintrc",
-        ".prettierrc",
-        ".tern-project"
-      ],
+      files: ['*.json', '.eslintrc', '.tslintrc', '.prettierrc', '.tern-project'],
       options: {
-        parser: "json",
+        parser: 'json',
         tabWidth: 2
       }
     },
     {
-      files: "*.{css,sass,scss,less}",
+      files: '*.{css,sass,scss,less}',
       options: {
-        parser: "css",
+        parser: 'css',
         tabWidth: 2
       }
     },
     {
-      files: "*.ts",
+      files: '*.ts',
       options: {
-        parser: "typescript"
+        parser: 'typescript'
       }
     },
     {
-      files: "*.vue",
+      files: '*.vue',
       options: {
-        parser: "vue"
+        parser: 'vue'
       }
     },
     {
-      files: "*.md",
+      files: '*.md',
       options: {
-        parser: "markdown"
+        parser: 'markdown'
       }
     }
   ]
-};
+}

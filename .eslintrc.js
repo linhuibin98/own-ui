@@ -22,12 +22,12 @@ module.exports = {
     indent: ['error', 2, { MemberExpression: 'off' }],
     'arrow-parens': 0,
     'no-loop-func': 2,
-    'space-before-function-paren': ['error', 'never'],
-    indent: ['error', 2, { SwitchCase: 1 }]
+    'space-before-function-paren': ['warn', 'never'],
+    indent: ['warn', 2, { SwitchCase: 1 }]
   },
   overrides: [
     {
-      files: ['**/__tests__/*.{j,t}s?(x)', '**/tests/unit/**/*.spec.{j,t}s?(x)'],
+      files: ['**/__tests__/*.{j,t}s?(x)', 'src/*.{j,t}s?(x)', 'story/*.{j,t}s?(x)'],
       env: {
         mocha: true
       }

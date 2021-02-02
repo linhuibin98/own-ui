@@ -11,6 +11,11 @@ const resolve = (filePath) => path.join(__dirname, './', filePath)
 module.exports = {
   outputDir: 'docs',
   publicPath: '/',
+  devServer: {
+    overlay: {
+      error: false
+    }
+  },
   pages: {
     index: {
       entry: resolve('story/main.ts'),
